@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walk-A-Thon</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Walk-A-Thon</h1>
+		<div class="row">
+		<div id="print-to-table" class="col-md-6">
+			<h3>Donor Submissions</h3>
+			<table class="table table-striped">
+    		<thead>
+      		<tr>
+        		<th>Name</th>
+        		<th>Email</th>
+        		<th>Amount</th>
+        		<th>Frequency</th>
+      		</tr>
+    		</thead>
+    		<tbody>
+      		<tr>
+        		<td>John Doe</td>
+        		<td>john@example.com</td>
+        		<td>Amount</td>
+        		<td>Frequency</td>
+      		</tr>
+      		<tr>
+        		<td>Mary Moe</td>
+        		<td>mary@example.com</td>
+        		<td>Amount</td>
+        		<td>Frequency</td>
+      		</tr>
+     			<tr>
+        		<td>July Dooley</td>
+        		<td>july@example.com</td>
+        		<td>Amount</td>
+        		<td>Frequency</td>
+      		</tr>
+   			</tbody>
+  		</table>
+		</div>
+		<div class="col-md-6">
+			<h3>Submit Donation</h3>
+			<div class="form-group">
+	    	<label for="name">Full Name</label>
+	    	<input type="name" class="form-control" id="name" placeholder="Enter name">
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="email">Email address</label>
+	    	<input type="email" class="form-control" id="email" placeholder="Enter email">
+	    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="donationCat">Choose how you would like to give your donation</label>
+	    	<select class="form-control" id="donationCat">
+	      	<option id="one-time">One-time</option>
+	      	<option id="every-lap">Per lap</option>
+	    	</select>
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="amount">Amount</label>
+	    	<input type="amount" class="form-control" id="amount" placeholder="Enter amount">
+	  	</div>
+	  	<button id="submit-btn" class="btn btn-primary">Submit</button>
+	  	<button id="clear-btn" class="btn btn-primary">Clear</button>
+	  </div>
+	</div>
+	<script src="../lib/node_modules/tether/dist/js/tether.min.js"></script>
+	<script src="dist/app.js"></script>
+</body>
+</html>
