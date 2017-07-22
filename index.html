@@ -19,25 +19,8 @@
         		<th>Frequency</th>
       		</tr>
     		</thead>
-    		<tbody>
-      		<tr>
-        		<td>John Doe</td>
-        		<td>john@example.com</td>
-        		<td>Amount</td>
-        		<td>Frequency</td>
-      		</tr>
-      		<tr>
-        		<td>Mary Moe</td>
-        		<td>mary@example.com</td>
-        		<td>Amount</td>
-        		<td>Frequency</td>
-      		</tr>
-     			<tr>
-        		<td>July Dooley</td>
-        		<td>july@example.com</td>
-        		<td>Amount</td>
-        		<td>Frequency</td>
-      		</tr>
+    		<tbody id="print-donor-rows">
+
    			</tbody>
   		</table>
 		</div>
@@ -45,23 +28,24 @@
 			<h3>Submit Donation</h3>
 			<div class="form-group">
 	    	<label for="name">Full Name</label>
-	    	<input type="name" class="form-control" id="name" placeholder="Enter name">
+	    	<input type="name" class="form-control" id="name" placeholder="First Last">
 	  	</div>
 	  	<div class="form-group">
 	    	<label for="email">Email address</label>
-	    	<input type="email" class="form-control" id="email" placeholder="Enter email">
+	    	<input type="email" class="form-control" id="email" placeholder="someone@example.com">
 	    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 	  	</div>
 	  	<div class="form-group">
 	    	<label for="donationCat">Choose how you would like to give your donation</label>
 	    	<select class="form-control" id="donationCat">
+	    		<option id="default" selected="true" disabled="disabled">Choose One</option>
 	      	<option id="one-time">One-time</option>
 	      	<option id="every-lap">Per lap</option>
 	    	</select>
 	  	</div>
 	  	<div class="form-group">
-	    	<label for="amount">Amount</label>
-	    	<input type="amount" class="form-control" id="amount" placeholder="Enter amount">
+	    	<label for="amount" >Amount</label>
+	    	<input type="amount" class="form-control" id="amount" placeholder="$0.00">
 	  	</div>
 	  	<button id="submit-btn" class="btn btn-primary">Submit</button>
 	  	<button id="clear-btn" class="btn btn-primary">Clear</button>

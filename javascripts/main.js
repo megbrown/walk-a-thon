@@ -12,3 +12,19 @@ $("#submit-btn").click( function() {
 	let amount = $("#amount").val();
 	donor.addDonor(name, email, frequency, amount);
 });
+
+$("#clear-btn").click( function() {
+	console.log("clear button clicked");
+	$("#name").val("");
+	$("#email").val("");
+	$("#amount").val("");
+	$("#donationCat option").prop("selected", function() {
+        return this.defaultSelected;
+    });
+});
+
+
+
+
+
+
